@@ -1,0 +1,23 @@
+  
+.parallax .container .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(233, 101, 24);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+.parallax .container .btn:hover {
+    background-color: rgb(221, 55, 55);
+    opacity: 1;
+  }
+
+
+

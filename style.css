@@ -1,0 +1,73 @@
+html,body{
+    height: 100%;
+    font-family: rajdhani,sans-serif;
+}
+.navbar{
+    width: 100%;
+    position:relative;
+    z-index: 999;    
+}
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar  a{
+    font-family: rajdhani, sans-serif;
+    display: block;
+    text-decoration: none;    
+}
+
+li a:hover{
+    color:red;
+    box-shadow: 0 15px 15px #F93822FF  ;
+}
+
+li a{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.hero_content{
+    z-index: 1;
+}
+
+header{
+    display: grid;
+    grid-template-areas:"hero" ;
+    height: 60vh;
+    max-height: 600px;
+    place-items: center;
+}
+
+header p,h1{
+    color: #fff;
+}
+
+
+.column {
+    margin-top: 60px;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .column img, .card{
+    box-shadow:  10px 10px 10px 10px #888888;
+  }
+
+.content{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.cnt{
+    background-attachment: fixed;
+    background-position: center;
+}  
