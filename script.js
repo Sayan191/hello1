@@ -8,4 +8,5 @@ form.addEventListener("submit" , e =>{
     html = `  <h2 class="d-flex justify-content-center"  style="font-family:Rajdhani, sans-serif; font-weight:bold; color: Red;">Thank You ${nm}</h2>`
     box.innerHTML +=html;
     form.reset()
+    setTimeout(window.location.replace("sayan191.github.io/hello1") , 3000);
 });
