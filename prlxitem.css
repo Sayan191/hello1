@@ -1,5 +1,5 @@
   
-.parallax .container .btn {
+.parallax1 .container .btn {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -11,13 +11,11 @@
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
+    
   }
   
-.parallax .container .btn:hover {
+.parallax1 .container .btn:hover {
     background-color: rgb(221, 55, 55);
     opacity: 1;
   }
-
-
-
