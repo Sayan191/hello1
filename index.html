@@ -4,9 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mom's Special</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/300bb69e52.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="prlxitem.css">
@@ -16,12 +18,22 @@
     <nav class="navbar navbar-expand-lg ">
         <h2 class="navbar-brand"><a href="index.html"><span style=" font-size: 35px; font-weight: 600;">Mom's Kitchen</span></a></h2>
 
-        <ul class="navbar-nav  justify-content-center" style="width: 100%;">
-            <li class="nav-item">
-                <a href="#">Menu</a>
+        <ul class="navbar-nav justify-content-center" style="width: 100%;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="vegies.html">Veg</a>
+                  <a class="dropdown-item" href="non-veg.html">Non-Veg</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a href="#">Orders</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Orders</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Online</a>
+                  <a class="dropdown-item" href="#">Pickup</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a href="#">Costumer Care</a>
@@ -29,11 +41,11 @@
         </ul>        
     </nav>
 
-    <div class="parallax"> 
+    <div class="parallax1"> 
         <header>
             <div class="hero_content">
                 <h1>Welcome To Our Website</h1>
-                <p>If You Taste it Once. You  can't stop liking it. THE BIRIYANI</p>
+                <p>If You Taste it Once. You can't stop liking it. THE BIRIYANI</p>
                 <div class="container">
                     <button class="btn success">Explore Us</button>
                 </div>
@@ -41,17 +53,17 @@
         </header>
     </div>
 
-    <div class="parallax1">
+    <div class="parallax ">
         <div class="container" style="height: 750px;">
-            <div class="cnt">
-                <div class="column">
+            <div class="cnt" >
+                <div class="column" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-quad">
                     <img src="3.jpg" style="height:500px;";>
                 </div>    
-                <div class="column">
+                <div class="column" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-quad">
                     <img src="4.jpg" style="height:500px;";>
                 </div>   
                 <div class="column">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-quad">
                         <p style="font-size:20px;">
                             Giving our best to the Customers <strong>Always</strong>
                         </p>
@@ -61,12 +73,45 @@
         </div>
     </div>
 
-    <div class="parallax2"></div>
+    <div class="parallax" style="height: 60%;">
+        <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+            <h1 class="d-flex justify-content-center"  style="font-family:Rajdhani, sans-serif; font-weight:bold; color: Red;">Get Subscribed With Us</h1>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="name" class="form-control" id="exampleInputName"  name="Name" value="">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" value="">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn1">Subscribe</button>
+              </form>        
+                
+        </div>
+    </div>
 
     <footer class="bg-dark text-light" >
         <div class="container">
-            <h2 style="text-align: center; font-family: rajdhani, sans-serif;">Theme By:- <span style="font-family:Courier;">Sayan Talukdar</span></h2>
+            <div class="col" style="width: 50%;">
+                <p><span style="font-weight: bold; font-size: 10px;">Customer Support:</span> ##########</p>
+            </div>
+            <div class="col" style="width: 50%;">
+                <p><span style="font-weight: bold; font-size: 10px;">Theme By:</span> Sayan Talukdar</p>
+            </div>
+        </div>
+        <div class="container">
+            <h2 style="text-align: center; font-family: rajdhani, sans-serif;"><span style="font-family:Courier;">Mom's Special</span></h2>
         </div>
     </footer>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
