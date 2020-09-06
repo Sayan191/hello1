@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 html,body{
     height: 100%;
     font-family: rajdhani,sans-serif;
@@ -15,18 +19,26 @@ html,body{
 .navbar  a{
     font-family: rajdhani, sans-serif;
     display: block;
-    text-decoration: none;    
+    text-decoration: none;  
+    border-radius: 15px;  
 }
 
 li a:hover{
-    color:red;
-    box-shadow: 0 15px 15px #F93822FF  ;
+    background-color:rgb(0, 110, 255);
+    color: white;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+    
 }
 
 li a{
     display: block;
     font-size: 20px;
     padding: 10px;
+}
+
+.dropdown{
+    
 }
 
 .hero_content{
@@ -52,9 +64,10 @@ header p,h1{
     width: 33.33%;
     padding: 5px;
   }
-  
-  .column img, .card{
-    box-shadow:  10px 10px 10px 10px #888888;
+
+
+.column img, .card{
+    box-shadow:  5px 5px 5px 5px #888888;
   }
 
 .content{
@@ -71,3 +84,18 @@ header p,h1{
     background-attachment: fixed;
     background-position: center;
 }  
+
+.box{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+.box form{
+    width: 90%;
+    margin: auto;
+}
+
+.col {
+    float: left;
+    padding: 5px;
+}
